@@ -11,6 +11,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+    rel="stylesheet"
+  />
   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
   <script src="./scripts/script.js"></script>
 
@@ -32,44 +36,49 @@
   </label>
 </nav>
 
-  <div class="calculadora" id="calcu">
-  <div ID="display">
-    <input type="text" placeholder="0" id="input" disabled>
+<div class="container">
+  <div class="calculadora dark">
+    <div class="troca-tema ativo">
+      <i class="toggler-icon"></i>
+    </div>
+    <div class="display-screen">
+      <div id="display"></div>
+    </div>
+    <div class="botoes">
+      <table>
+        <tr>
+          <td><button class="operador-btn" id="limpa">C</button></td>
+          <td><button class="operador-btn" id="/">&divide;</button></td>
+          <td><button class="operador-btn" id="*">&times;</button></td>
+          <td><button class="operador-btn" id="volta"><</button></td>
+        </tr>
+        <tr>
+          <td><button class="numero-btn" id="7">7</button></td>
+          <td><button class="numero-btn" id="8">8</button></td>
+          <td><button class="numero-btn" id="9">9</button></td>
+          <td><button class="operador-btn" id="-">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="numero-btn" id="4">4</button></td>
+          <td><button class="numero-btn" id="5">5</button></td>
+          <td><button class="numero-btn" id="6">6</button></td>
+          <td><button class="operador-btn" id="+">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="numero-btn" id="1">1</button></td>
+          <td><button class="numero-btn" id="2">2</button></td>
+          <td><button class="numero-btn" id="3">3</button></td>
+          <td><button class="igual-btn" id="igual">=</button></td>
+        </tr>
+        <tr>
+          <td><button class="operador-btn" id="(">(</button></td>
+          <td><button class="numero-btn" id="0">0</button></td>
+          <td><button class="operador-btn" id=")">)</button></td>
+        </tr>
+      </table>
+    </div>
   </div>
-  <div class="botao">
-    <!--apagador de tudo-->
-    <input type="button" value="AC" id="apagar">
-    <!--apaga valores únicos-->
-    <input type="button" value="DEL" id="apaga">
-
-    <input type="button" value="/" class="botao-input">
-    <input type="button" value="*" class="botao-input">
-
-    <input type="button" value="7" class="botao-input">
-    <input type="button" value="8" class="botao-input">
-    <input type="button" value="9" class="botao-input">
-    
-    <input type="button" value="-" class="botao-input">
-    
-    <input type="button" value="6" class="botao-input">
-    <input type="button" value="5" class="botao-input">
-    <input type="button" value="4" class="botao-input">
-    
-    <input type="button" value="+" class="botao-input">
-    
-    <input type="button" value="1" class="botao-input">
-    <input type="button" value="2" class="botao-input">
-    <input type="button" value="3" class="botao-input">
-
-    <input type="button" value="=" id="igual">
-    <input type="button" value="0" class="botao-input">
-    <input type="button" value="." class="botao-input">
-
-  </div>
-
-
 </div>
-
 
 <section></section>
 
